@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +12,25 @@
 <body class="font-mono">
     <div class="flex justify-center bg-gray-200">
         <a href="index.html" class="bg-blue-500 px-10 mt-10 py-2 text-center">Back to home</a>
-    </div>
+ </div> 
+  
     <div class="flex justify-center h-screen items-center bg-gray-200">
+      
         <div class="w-96 p-10 bg-white shadow-lg rounded-xl">
+         <form action="login.php" method="GET"> 
             <h2 class="mb-2 text-center font-semibold block text-3xl"> <i class="fa-solid fa-user"></i> Login</h2>
             <hr class="mt-3 text-gray-900"/>
             <div class="mt-3">
                 <label for="username" class="text-base block mb-2 mt-2">username</label>
-                <input type="text" name="" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your name ..." required>
+                <input type="text" name="username" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your name ..." required>
             </div>
             <div class="mt-3">
                 <label for="email" class="text-base block mb-2 mt-2">Email</label>
-                <input type="email" name="" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your email ..." required>
+                <input type="email" name="Email" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your email ..." required>
             </div>
             <div class="mt-3">
                 <label for="Password" class="text-base block mb-2 mt-2">Password</label>
-                <input type="password" name="" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your Password ..." required>
+                <input type="password" name="password" class="border text-base w-full outline-none px-5 py-2 ring-1 rounded-md focus:ring-sky-500 ring-gray-300" placeholder="Your Password ..." required>
             </div>
             <div class="mt-3 flex justify-between">
                 <div>
@@ -36,10 +41,14 @@
                     <p>forgot Password?</p>
                 </div>
             </div>
-            <div>
-                <button class="text-white w-full bg-blue-400 py-1 rounded-sm hover:bg-green-400 transition ease-out duration-500">Login</button>
-            </div>
+            
+                <input type="submit" name="submit" class="text-white w-full bg-blue-400 py-1 rounded-sm hover:bg-green-400 transition ease-out duration-500" value="submit">
+            
+        </form>
         </div>
+    
     </div>
+
+
 </body>
 </html>
